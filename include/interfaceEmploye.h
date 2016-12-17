@@ -1,0 +1,6 @@
+#ifndef INTERFACEEMPLOYE_H_INCLUDED
+#define INTERFACEEMPLOYE_H_INCLUDED
+
+void creer_home_emp(GtkWidget *win);
+
+#endif // INTERFACEEMPLOYE_H_INCLUDED

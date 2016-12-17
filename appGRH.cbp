@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="appGRH" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/appGRH" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/appGRH" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`pkg-config gtk+-3.0 --cflags`" />
+			<Add directory="C:/Users/Nouaili/Desktop/ex5/appGRH/" />
+			<Add directory="interface" />
+			<Add directory="C:/Users/Nouaili/Desktop/ex5/appGRH/include" />
+		</Compiler>
+		<Linker>
+			<Add option="`pkg-config gtk+-3.0 --libs`" />
+			<Add option="`mysql_config --cflags --libs`" />
+			<Add directory="C:/Users/Nouaili/Desktop/ex5/appGRH/" />
+		</Linker>
+		<Unit filename="functions/Utilisateur.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="functions/dataBase.c">
+			<Option compilerVar="CC" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="functions/usefullFn.c">
+			<Option compilerVar="CC" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/TypeDef.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/Utilisateur.h" />
+		<Unit filename="include/dataBase.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/dialog.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/interfaceAdmin.h" />
+		<Unit filename="include/interfaceConnection.h" />
+		<Unit filename="include/interfaceEmploye.h" />
+		<Unit filename="include/interfaceHome.h" />
+		<Unit filename="include/interfaceResponsable.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/usefullFn.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="interface/dialog.c">
+			<Option compilerVar="CC" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="interface/interfaceAdmin.c">
+			<Option compilerVar="CC" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="interface/interfaceConnection.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="interface/interfaceEmploye.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="interface/interfaceHome.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="interface/interfaceResponsable.c">
+			<Option compilerVar="CC" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
